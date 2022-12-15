@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <div class="header-title">Cán bộ, giáo viên</div>
+          <div class="header-info"></div>
+        </div>
+        <div class="header-right">
+          <div class="header-message"></div>
+          <div class="header-user-name">Admin</div>
+          <div class="header-show"></div>
+          <div class="header-user-avatar"></div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="menu">
+          <div class="sidebar-item">
+            <div
+              class="sidebar-img"
+              style="
+                background-image: url(../../assets/Icons/ic_IconThietBi.svg);
+              "
+            ></div>
+            <div class="sidebar-title">Thiết bị</div>
+          </div>
+          <div class="menu-more"></div>
+        </div>
+        <div class="sidebar-container">
+          <div class="sidebar-item">
+            <div
+              class="sidebar-img"
+              style="background-image: url(../../assets/Icons/ic_TongQuan.svg)"
+            ></div>
+            <div class="sidebar-title">Tổng quan</div>
+          </div>
+          <div class="sidebar-item">
+            <div
+              class="sidebar-img"
+              style="background-image: url(../../assets/Icons/ic_ThietBi.svg)"
+            ></div>
+            <div class="sidebar-title">Thiết bị</div>
+          </div>
+          <div class="sidebar-item">
+            <div
+              class="sidebar-img"
+              style="background-image: url(../../assets/Icons/ic_MuonTra.svg)"
+            ></div>
+            <div class="sidebar-title">Mượn trả</div>
+          </div>
+          <div class="sidebar-item">
+            <div
+              class="sidebar-img"
+              style="background-image: url(../../assets/Icons/ic_BaoCao.svg)"
+            ></div>
+            <div class="sidebar-title">Báo cáo</div>
+          </div>
+          <div class="sidebar-item">
+            <div
+              class="sidebar-img"
+              style="background-image: url(../../assets/Icons/ic_HeThong.svg)"
+            ></div>
+            <div class="sidebar-title">Hệ thống</div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-container">
+          <div class="content-header">
+            <form class="content-header-search">
+              <input class="content-header-input" type="text" />
+              <i class="content-header-search-icon icon"></i>
+            </form>
+            <div class="content-header-right">
+              <button
+                class="content-header-add button button-default cursor-pointer"
+              >
+                Thêm
+              </button>
+              <button class="content-header-export button cursor-pointer">
+                Xuất khẩu
+              </button>
+              <button class="content-header-more button"></button>
+            </div>
+          </div>
+          <div class="content-body">
+            <div class="table-container">
+              <table border="1px solid #d5d8e6" id="tb-employee-list">
+                <thead>
+                  <tr class="table-header">
+                    <td class="text-align-center"><input type="checkbox" /></td>
+                    <td class="text-align-center">Số hiệu cán bộ</td>
+                    <td class="text-align-left">Họ và tên</td>
+                    <td class="text-align-center">Số điện thoại</td>
+                    <td>Tổ chuyên môn</td>
+                    <td>QL theo môn</td>
+                    <td>QL kho, phòng</td>
+                    <td class="text-align-center">Đào tạo QLTB</td>
+                    <td class="text-align-center">Đang làm việc</td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="content-footer">
+            <div class="content-footer-container">
+              <div class="content-footer-first-page content-footer-icon"></div>
+              <div class="content-footer-pre-page content-footer-icon"></div>
+              <div class="content-footer-page">1</div>
+              <div class="content-footer-next-page content-footer-icon"></div>
+              <div class="content-footer-last-page content-footer-icon"></div>
+              <div>1/2 trang</div>
+              <div class="totol-teacher">(56 giáo viên)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-container">
+        <div class="dialog-add">
+          <div class="dialog-add-container">
+            <div class="dialog-left">
+              <div class="dialog-employee-img">
+                <div class="dialog-employee-img-add">Chọn ảnh</div>
+              </div>
+              <div class="dialog-employee-name">Họ và tên</div>
+              <div class="dialog-employee-code">Số hiệu cán bộ</div>
+            </div>
+            <div class="dialog-line"></div>
+            <div class="dialog-right">
+              <div class="dialog-right-header">
+                <div class="dialog-name">Thêm hồ sơ Cán bộ, giáo viên</div>
+                <div class="dialog-close-button cursor-pointer"></div>
+              </div>
+              <div class="dialog-right-body">
+                <div class="dialog-el-1">
+                  <div>Số hiệu cán bộ</div>
+                  <p class="color-red">*</p>
+                </div>
+                <div class="dialog-el-2">
+                  <input
+                    id="txtEmployeeCode"
+                    class="dialog-input"
+                    style="width: 100%"
+                    type="text"
+                  />
+                  <div class="dialog-el-2-error dialog-el-right--error">
+                    Số hiệu cán bộ không được bỏ trống
+                  </div>
+                </div>
+                <div class="dialog-el-3 dialog-el__marrgin">
+                  <div>Họ và tên</div>
+                  <p class="color-red">*</p>
+                </div>
+                <div class="dialog-el-0">
+                  <input
+                    id="txtEmployeeName"
+                    class="dialog-input"
+                    style="width: 100%"
+                    type="text"
+                  />
+                  <div class="dialog-el-0-error dialog-el-left--error">
+                    Họ và tên không được bỏ trống
+                  </div>
+                </div>
+                <div class="dialog-el-4">Số điện thoại</div>
+                <div class="dialog-el-5" style="position: relative">
+                  <input
+                    class="dialog-input"
+                    style="width: 100%"
+                    type="text"
+                    id="txtEmployeeMobie"
+                  />
+                </div>
+                <div class="dialog-el-6 dialog-el__marrgin">Email</div>
+                <input
+                  class="dialog-el-7 dialog-input"
+                  type="text"
+                  id="txtEmployeeEmail"
+                />
+                <div class="dialog-el-8">Tổ bộ môn</div>
+                <div class="dialog-el-9">
+                  <div class="dialog-el-9-select dialog-input">
+                    <span class="">Tổ bộ môn</span>
+                    <img
+                      src="../../assets/Icons/ic_Chevron.png"
+                      width="25"
+                      height="25"
+                    />
+                  </div>
+                  <div class="dialog-el-9-list">
+                    <div class="dialog-el-9-list-item">Tổ Toán - Tin</div>
+                    <div class="dialog-el-9-list-item">Tổ Lý - Hóa</div>
+                    <div class="dialog-el-9-list-item">Tổ Sinh-Sử-Địa</div>
+                    <div class="dialog-el-9-list-item">Tổ Anh văn</div>
+                    <div class="dialog-el-9-list-item">Tổ Ngữ văn</div>
+                    <div class="dialog-el-9-list-item">Tổ Văn phòng</div>
+                  </div>
+                </div>
+                <div class="dialog-el-10 dialog-el__marrgin">QL theo môn</div>
+                <div class="dialog-el-11">
+                  <div class="dialog-el-11-select dialog-input">
+                    <div value="abc" class="dialog-el-11-select-content">
+                      <span class="dialog-el-11-select-content-first"
+                        >QL theo môn</span
+                      >
+                    </div>
+                    <img
+                      src="../../assets/Icons/ic_Chevron.png"
+                      width="25"
+                      height="25"
+                    />
+                  </div>
+                  <div class="dialog-el-11-list">
+                    <div
+                      class="dialog-el-11-list-item dialog-el-11-list-item-header"
+                    >
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Tất cả</span>
+                    </div>
+                    <div class="dialog-el-11-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Toán</span>
+                    </div>
+                    <div class="dialog-el-11-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Lý</span>
+                    </div>
+                    <div class="dialog-el-11-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Hóa</span>
+                    </div>
+                    <div class="dialog-el-11-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Sinh</span>
+                    </div>
+                    <div class="dialog-el-11-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Ngữ văn</span>
+                    </div>
+                    <div class="dialog-el-11-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Lịch sử</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="dialog-el-12">QL kho, phòng</div>
+                <div class="dialog-el-13">
+                  <div class="dialog-el-13-select dialog-input">
+                    <div class="dialog-el-13-select-content">
+                      <span class="dialog-el-13-select-content-first"
+                        >QL theo môn</span
+                      >
+                    </div>
+                    <img
+                      src="../../assets/Icons/ic_Chevron.png"
+                      width="25"
+                      height="25"
+                    />
+                  </div>
+                  <div class="dialog-el-13-list">
+                    <div
+                      class="dialog-el-13-list-item dialog-el-13-list-item-header"
+                    >
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Tất cả</span>
+                    </div>
+                    <div class="dialog-el-13-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Phòng Toán-Lý</span>
+                    </div>
+                    <div class="dialog-el-13-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Phòng Hóa-Sinh</span>
+                    </div>
+                    <div class="dialog-el-13-list-item">
+                      <img
+                        src="../../assets/Icons/ic_Checkbox_Inactive.png"
+                        width="25"
+                        height="25"
+                      />
+                      <span class="">Kho phòng chung</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dialog-right-body-checkbox">
+                <input type="checkbox" />
+                <div class="checkbox-1-content">Trình độ nghiệp vụ QLTB</div>
+                <div class="dialog-right-body-checkbox-right">
+                  <input type="checkbox" />
+                  <div class="check-box-2-content">Đang làm việc</div>
+                </div>
+              </div>
+              <div class="dialog-right-footer">
+                <button
+                  class="dialog-button dialog-button-close cursor-pointer"
+                >
+                  Đóng
+                </button>
+                <button
+                  id="dialog-button-save"
+                  class="dialog-button cursor-pointer"
+                >
+                  Lưu
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="toast-message-container">
+          <div class="toast-message">
+            <div class="toast-message-left">
+              <div class="toast-message-img"></div>
+              <div class="toast-message-text">
+                <div class="toast-message-title">Lỗi</div>
+                <div class="toast-message-content"></div>
+              </div>
+            </div>
+            <div class="toast-message-close"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/employee.js"></script>
+    <script src="/js/combobox.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #d5d8e6;
+  margin-bottom: 68px;
+}
+.table-container {
+  height: 814px;
+  overflow-y: auto;
+  margin-top: 16px;
+}
+.table-header {
+  background-color: #f5f6fa;
+  position: sticky;
+  top: -1px;
+}
+
+tr {
+  height: 45px;
+}
+td {
+  padding: 0 16px;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-center {
+  text-align: center;
+}
+
+.edit-icon {
+  background-image: url(../../assets/Icons/ic_Edit.png);
+}
+.remove-icon {
+  background-image: url(../../assets/Icons/ic_Remove.png);
+}

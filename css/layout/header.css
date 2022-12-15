@@ -1,0 +1,50 @@
+.header {
+  grid-column: 2/-1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.header-title {
+  margin-left: 16px;
+}
+.header-info {
+  background-image: url(../../assets/Icons/ic_Help.png);
+  width: 32px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+.header-message {
+  background-image: url(../../assets/Icons/ic_Notification_32.png);
+  width: 44px;
+  height: 32px;
+  background-repeat: no-repeat;
+  border-right: 1px solid #d5d8e6;
+}
+.header-user-name {
+}
+.header-show {
+  background-image: url(../../assets/Icons/ic_show.png);
+  width: 18px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+.header-user-avatar {
+  background-image: url(../../assets/Icons/ic_Avatar_36.png);
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  margin-right: 32px;
+}

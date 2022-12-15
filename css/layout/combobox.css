@@ -1,0 +1,112 @@
+/* CSS cho Tổ bộ môn */
+.dialog-el-9 {
+  position: relative;
+}
+.dialog-el-9-list-item:hover {
+  background-color: rgba(3, 174, 102, 0.2);
+  cursor: pointer;
+}
+.dialog-el-9-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.dialog-el-9-list {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 170px;
+  overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px;
+  display: none;
+}
+.dialog-el-9-list-item {
+  padding: 8px;
+}
+/* CSS cho QL theo môn */
+.dialog-el-11 {
+  position: relative;
+}
+.dialog-el-11-list-item:hover {
+  background-color: rgba(3, 174, 102, 0.2);
+  cursor: pointer;
+}
+.dialog-el-11-select {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.dialog-el-11-select-content {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  cursor: pointer;
+  gap: 10px;
+}
+.dialog-el-11-list {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 170px;
+  overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px;
+  display: none;
+}
+.dialog-el-11-list-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.dialog-el-11-list-item-header {
+  border-bottom: 1px solid #d5d8e6;
+  margin: 0 8px 0 8px;
+  padding: 8px 8px 8px 0;
+}
+/* CSS cho QL kho, phong*/
+
+.dialog-el-13-list-item:hover {
+  background-color: rgba(3, 174, 102, 0.2);
+  cursor: pointer;
+}
+.dialog-el-13-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.dialog-el-13-select-content {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.dialog-el-13-list {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 124px;
+  overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px;
+  display: none;
+}
+.dialog-el-13-list-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.dialog-el-13-list-item-header {
+  border-bottom: 1px solid #d5d8e6;
+  margin: 0 8px 0 8px;
+  padding: 8px 8px 8px 0;
+}

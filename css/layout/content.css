@@ -1,0 +1,42 @@
+.content {
+  margin: 12px 12px 0 12px;
+  /* height: 100vh; */
+  position: relative;
+}
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-header-right {
+  display: flex;
+  gap: 12px;
+}
+.content-header-search {
+  display: flex;
+  border: 1px solid #d5d8e6;
+  border-radius: 4px;
+  height: 32px;
+  align-items: center;
+}
+.content-header-input {
+  border: none;
+  width: 350px;
+  height: 30px;
+}
+.content-header-search-icon {
+  background-image: url(../../assets/Icons/Ic_seerch.png);
+  border-left: 2px solid #d5d8e6;
+}
+.content-header-more {
+  background-image: url(../../assets/Icons/ic_More.png);
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  min-width: 32px;
+}
+.content-header-add {
+  width: 80px;
+}
+.content-header-export {
+  width: 96px;
+}

@@ -1,0 +1,45 @@
+.content-footer {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px;
+  background-color: #fff;
+}
+.content-footer-container {
+  display: flex;
+  align-items: center;
+}
+.content-footer-icon {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: 0 3px;
+}
+.content-footer-first-page {
+  background-image: url(../../assets/Icons/ic_MoveToFirst.png);
+  margin-left: 16px;
+}
+.content-footer-pre-page {
+  background-image: url(../../assets/Icons/ic_Back.png);
+}
+.content-footer-page {
+  height: 32px;
+  width: 66px;
+  border-radius: 4px;
+  border: 1px solid #d5d8e6;
+  text-align: center;
+  line-height: 32px;
+}
+.content-footer-next-page {
+  background-image: url(../../assets/Icons/ic_Next.png);
+  margin-left: 8px;
+}
+.content-footer-last-page {
+  background-image: url(../../assets/Icons/ic_MoveToLast.png);
+}
+.totol-teacher {
+  margin-left: 16px;
+}

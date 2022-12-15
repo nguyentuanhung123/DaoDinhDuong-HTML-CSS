@@ -1,0 +1,41 @@
+.sidebar {
+  background-color: #24344b;
+  grid-row: 1/-1;
+  color: #f5f6fa;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.menu {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+.menu-more {
+  background-image: url(../../assets/Icons/ic_xemchitiet.png);
+  width: 35px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.sidebar-container .sidebar-item:hover {
+  background-color: rgba(229, 243, 255, 0.5);
+  cursor: pointer;
+}
+.sidebar-container .sidebar-item:active {
+  color: #0dd469;
+  border-left: 3px solid #0dd469;
+}
+.sidebar-img {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  margin-left: 12px;
+}
+.sidebar-title {
+  margin-left: 8px;
+}

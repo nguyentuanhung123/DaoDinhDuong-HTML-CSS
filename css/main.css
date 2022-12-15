@@ -1,0 +1,45 @@
+@import url(../css/layout/header.css);
+@import url(../css/layout/sidebar.css);
+@import url(../css/layout/content.css);
+@import url(./base/base.css);
+@import url(../css/layout/table.css);
+@import url(../css/layout/content_footer.css);
+@import url(../css/layout/dialog_add.css);
+@import url(../css/layout/combobox.css);
+@import url(../css/layout/toast_message.css);
+
+@font-face {
+  font-family: Opensand-bold;
+  src: url(../assets/Fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: Opensand;
+  src: url(../assets/Fonts/OpenSans-Regular.ttf);
+}
+/* CSS cho scroll */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+:root {
+  --backgound-color: #eaecef;
+  --main-color: #03ae66;
+  --dialog-text-color: #4d4f5c;
+  --delete-color: #fa3939;
+  --line-color: #d5d8e6;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Opensand;
+  margin: 0;
+}
+.container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 56px 1fr;
+}
